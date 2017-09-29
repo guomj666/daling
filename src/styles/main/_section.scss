@@ -1,0 +1,374 @@
+
+.section-goods{
+    height:100%;
+    width:100%;
+    display:flex;
+    flex-grow:1;
+    flex-shrink: 1;
+    overflow-y: scroll;
+    flex-direction: column;
+    background-color: #f5f5f5;
+}
+
+//======================================商品最后一个组件的样式
+//.good-box:last-child{
+//  margin-top:0.08rem;
+//  margin-bottom:0.08rem;
+//}
+.good-box{
+    background-color:white;
+    width:100%;
+    height:100%;
+    .DL_heart{
+        width:100%;
+        height:100%;
+    }
+    .active-img-top {
+        height:1.93rem;
+        width:100%;
+        background: rgba(0,0,0,.1);
+        position: relative;
+        overflow: hidden;
+        background-size: cover;
+    }
+}
+//========================================时间组件的样式
+.bottom-time {
+        padding: 0.08rem 0;
+        text-align: center;
+        position: relative;
+        margin: 0 auto;
+        .label:before{
+            content: "";
+            display: inline-block;
+            position: absolute;
+            height: 1px;
+            width: 1rem;
+            top: 50%;
+            right: 65%;
+            background: -webkit-linear-gradient(left , #f9f9f9,#d2d2d2);
+        }
+        .label:after{
+            content: "";
+            display: inline-block;
+            position: absolute;
+            height: 1px;
+            width: 1rem;
+            top: 50%;
+            right: 9%;
+            background: -webkit-linear-gradient(right, #f9f9f9, #d2d2d2);
+        }
+        .label{
+            font-size: 0.12rem;
+            color: #858385;
+            position:relative;
+            .time_icon {
+                background-image: url(/img/time.png);
+                display: inline-block;
+                position: relative;
+                width: 0.18rem;
+                height: 0.18rem;
+                background-size: cover;
+                top: 0.03rem;
+                margin-right:0.03rem;
+            }  
+        }
+    }
+//================================================TitleComponent
+.title{
+    margin-top:0.1rem;
+    background: #fff;
+    padding: 0 0.26rem;
+    text-align: center;
+    width: 100%;
+    .label_left{
+        display: inline-block;
+        border-bottom: 1px solid #a8a8ad;
+        position: relative;
+        width: .12rem;    
+        margin-bottom: 0.06rem;
+    }
+    .label{
+        height: 0.4rem;
+        color:#000000;
+        position: relative;
+        display: inline-block;
+        margin: 0 auto;
+        font-size: 0.12rem;
+        line-height: 0.4rem;
+        padding: 0 0.1rem;
+    }
+    .label_right{
+        display: inline-block;
+        border-bottom: 1px solid #a8a8ad;
+        position: relative;
+        width: 0.12rem;
+        margin-bottom: 0.06rem;
+    }
+}
+
+//=========================================================闪购
+.goods-img{
+    height: 2.4rem;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    margin-bottom: .2rem;
+    .goods-right-icon{
+        background-repeat: no-repeat;   
+        background-size: cover;
+        float: right;
+        margin-right: .1rem;
+        width: 0.3rem;
+        height: 0.3rem;
+    }
+    .goods-right-icon1{
+        background-repeat: no-repeat;   
+        background-size: cover;
+        float: right;
+        margin-right: .3rem;
+        width: 0.3rem;
+        height: 0.3rem;
+    }
+}
+
+
+
+//===============================================================今日上新
+
+//四个小方格
+.NewGoods-box0{
+    border-top:1px solid #d0d0d0;
+    border-right:1px solid #d0d0d0;
+}
+.NewGoods-box1{
+    border-top:1px solid #d0d0d0;
+}
+.NewGoods-box2{
+    border-top:1px solid #d0d0d0;
+    border-right:1px solid #d0d0d0;
+    border-bottom:1px solid #d0d0d0;
+}
+.NewGoods-box3{
+    border-top:1px solid #d0d0d0;
+    border-bottom:1px solid #d0d0d0;
+    margin-bottom:0.1rem;
+}
+.NewGoods-box{
+    z-index:2;
+    position:relative;
+    width:1.87rem;
+    height:0.92rem;
+    background:white;
+    float:left;
+    .NewGoods{
+        width:0.6rem;
+        height:0.6rem;
+        background-size: cover;
+        margin-left: 1.1rem;
+        margin-top: 0.1rem;
+    }
+}
+.today-txt-div{
+    top:0.28rem;
+    left:0.12rem;
+    position:absolute;
+    .today-name{
+        font-size: 12px;
+        padding-left: 0.05rem;
+    }
+    .today-num0{
+        color: #ec87c0;
+        border: 1px solid #ec87c0;
+    }
+    .today-num1{
+        color: #8cc152;
+        border: 1px solid #8cc152;
+    }
+    .today-num2{
+        color: #1abc9c;
+        border: 1px solid #1abc9c;
+    }
+    .today-num3{
+        color: #4fc1e9;
+        border: 1px solid #4fc1e9;
+    }
+    .today-num{
+        position:relative;
+        font-size: 12px;
+        font-size: 0.1rem;
+        padding-left: 0.08rem;
+        padding-left: 0.1rem;
+        width: 0.9rem;
+        height: 0.2rem;
+        line-height: 0.2rem;
+        border-radius: 0.8rem;
+        .today-icon-right0{
+            border-top: 1px solid #ec87c0;
+            border-right: 1px solid #ec87c0;
+        }
+        .today-icon-right1{
+            border-top: 1px solid #8cc152;
+            border-right: 1px solid #8cc152;
+        }
+        .today-icon-right2{
+            border-top: 1px solid #1abc9c;
+            border-right: 1px solid #1abc9c;
+        }
+        .today-icon-right3{
+            border-top: 1px solid #4fc1e9;
+            border-right: 1px solid #4fc1e9;
+        }
+        .today-icon-right{
+            position:absolute;
+            top:0.01rem;
+            right:0.1rem;
+            display:block;
+            margin-top:0.06rem;
+            margin-left:0rem;
+            width: 0.05rem;
+            height: 0.05rem;
+            transform: rotate(45deg);
+            float: right;
+        }
+    }  
+}
+
+
+.good-block{
+    padding-top: 0.07rem;
+    padding-left: 0.09rem;
+    padding-right: 0.09rem;
+    background-color: white;
+    position:relative;
+    .goods-title{
+        font-size: 14px;
+        line-height: 0.3rem;
+        color: #252525;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .goods-desc{
+        color: #9f9f9f;
+        font-size: 0.7em;
+        line-height: 16px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin-bottom: 0.07rem;
+    }
+    .goods-price{
+        font-size: 0.12rem;
+        line-height: 0.4rem;
+        color: #f0593f;
+        display: table-cell;
+        vertical-align: middle;
+        .icon-price:after{
+            content: "¥";
+            color: inherit;
+            font-size: inherit;
+            font-style: normal;
+            margin-right: 0.05rem;
+        }
+        .goods-price-number{
+            font-size: 0.18rem;
+        }
+    }
+    .cart-btn{
+        box-sizing: border-box;
+        width: 1.3rem;
+        height: 0.37rem;
+        line-height: 100%;
+        bottom: 8px;
+        right: 8px;
+        position: absolute;
+        text-align: center;
+        color: #666;
+        border: 1px solid #a4a4a4;
+        border-radius: .05rem;
+        font-size: 0.1rem;
+        background: #fff;
+        line-height: 0.3em;
+        border-radius: .1rem;
+        display: box;
+        display: -webkit-box;
+        box-align: center;
+        box-pack: center;
+        .cart-btn-desc{
+            text-align: center;
+            color: #666;    
+            font-size: 0.12rem;
+            line-height: 1.4em;
+            padding-left:0.1rem;
+        }
+        .icon-car {
+            height: 0.21rem;
+            font-size: 0.18rem;
+            line-height: 0.28rem;
+            text-align: center;
+            border-left: 1px solid #9a9a9a;
+            margin-left: 0.1rem;
+            margin-top:0.07rem;
+            .goods-cart {
+                background-image: url(/img/cart1.png);
+                background-size: cover;
+                width: 0.25rem;
+                height: 0.25rem;
+                margin-left: 0.07rem;
+                margin-top: -0.04rem;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

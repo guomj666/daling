@@ -1,0 +1,28 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body,#app{
+    height: 100%;
+    position: relative;
+    font-family: arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+}
+body{
+    font-size: 14px;
+}
+.full-height{
+    height: 100%;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    display:block;
+}

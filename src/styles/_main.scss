@@ -1,0 +1,165 @@
+
+.header-box{
+    width:100%;
+    // height:4.15rem;
+}
+
+
+
+
+
+.container{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    height:100%;
+    position: relative;
+}
+
+// HeaderSearch部分
+.mainSearchBox{
+    width: 100%;
+    height: 0.4rem;
+    background:#efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .mianSearch{//搜索框
+
+        display: block;
+        width: 90%;
+       border-radius: 0.15rem;
+       border:none;
+       outline:none;
+        height: 0.3rem;
+        text-align: center;
+        background: #fff url(/images/search.png) no-repeat 39% 50%;
+        background-size: 0.15rem;
+    
+    }
+}
+///////HeaderNav部分
+.waimai-header{
+    width:100%;
+    height: 0.35rem;
+}
+.HeaderNavBox{
+    float: left;
+    width: 85%;
+    height: 0.35rem;
+    line-height: 0.35rem;
+   
+    .swiper-slide{
+        color: #585658;;
+        width: auto;
+        margin: 0px 15px; 
+    }
+    
+}
+.downSlideSection{//右侧点击下拉部分
+    width: 15%;
+    height: 0.35rem;
+    float: right;
+    box-shadow:0 -0.07rem .12rem #999;
+    overflow: hidden;
+    background: url(/images/down.png) no-repeat center;
+    background-size:0.2rem;
+}
+.swiper-scrollbar-drag{
+    width:20%!important;
+}
+.activeImg{
+    height:100%;
+    width:auto;
+}
+.navBox{
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+
+    li{
+        width: 25%;
+        height:0.36rem;
+        float: left;
+        text-align: center;
+        line-height: 0.36rem;
+        display: none;
+    }
+}
+//////headerBanner部分 就是三张图片
+.bannerImg{
+    width: 100%;
+    height:1.28rem;
+    margin-bottom: 0.02rem;
+    img{
+        width: 100%;
+        height: 1.28rem;
+    }
+}
+.bannerImg:nth-child(2){
+    width: 49.8%;
+    float: left;
+}
+.bannerImg:last-child{
+    width: 49.7%;
+    float: right;
+}
+/////bannerAutumn部分就是五张图片并排的部分
+.header_autumn{
+    
+    .header_autumn_img{
+        width: 100%;
+        display: flex;
+        flex-direction:row;
+    }
+}
+.bannerAutumn{
+    width: 20%;
+    height: 0.75rem;
+    a img{
+        height: 0.75rem;
+    }
+}
+
+
+
+
+
+//////////////////////////////////// 底部
+.footer-box{
+    height:0.4rem;
+    width:100%;
+}
+
+@import './_base.scss';
+
+.footer{
+//  position: absolute;
+//  bottom: 0;
+    width: 100%;
+    display: flex;
+    a{
+        flex-grow: 1;flex-shrink: 1;
+        display: flex;flex-flow: column;
+        align-items: center;justify-content: center;
+       
+        // font-size: 0.8em;
+        span:first-child{
+            font-size: 1.5em;
+        }
+       .fonts{
+           font-size:0.05rem;
+       } 
+    
+       
+    }
+   .active{
+    color: $base-color;
+}
+    background-color: #fff;
+    height: 0.4rem;
+    // -webkit-box-shadow: 0 -0.026667rem 0.053333rem rgba(0,0,0,.1);
+    // box-shadow: 0 -0.026667rem 0.053333rem rgba(0,0,0,.1);
+}
+/////////////////////////////
